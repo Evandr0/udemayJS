@@ -1,2 +1,2 @@
-# udemayJS
+# udemyJS
 JavaScript Udemy
