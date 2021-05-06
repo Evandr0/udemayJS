@@ -1,0 +1,1615 @@
+{
+   "advancedvoip" : {
+      "AdvancedVoipConfig" : {
+         "CertificateFile" : "",
+         "ClientCertificateVerification" : false,
+         "DisableSessionTimer" : false,
+         "HostnameCertificateVerification" : false,
+         "PrivateKeyFile" : "",
+         "PrivateKeyPassword" : "",
+         "SBCRtpMaxPort" : 16000,
+         "SBCRtpMinPort" : 15000,
+         "SipInterface" : [
+            {
+               "Name" : "eth0",
+               "TcpPort" : 7048,
+               "TlsPort" : 5061,
+               "UdpPort" : 7048
+            },
+            {
+               "Name" : "eth1",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060
+            },
+            {
+               "Name" : "eth2",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060
+            },
+            {
+               "Name" : "eth3",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060
+            },
+            {
+               "Name" : "vpn0",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060
+            },
+            {
+               "Name" : "ppp0",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060
+            }
+         ],
+         "TelephoneEventPayloadType" : 100,
+         "UsePRACK" : false
+      }
+   },
+   "appservice" : {
+      "KPAService" : {
+         "DeviceSerialNumber" : 319,
+         "Enabled" : false,
+         "PIN" : "121822",
+         "ServerIP" : "sms.svc.khomp.com",
+         "ServerPort" : "9999",
+         "ServicesMap" : [
+            {
+               "IP" : "127.0.0.1",
+               "Name" : "kgateway",
+               "Port" : 14069
+            }
+         ]
+      }
+   },
+   "dashboard" : {
+      "Dashboard" : {
+         "Elements" : {
+            "Order" : [],
+            "Visible" : []
+         }
+      }
+   },
+   "devices" : {
+      "Devices" : [
+         {
+            "ChannelGroups" : [],
+            "CustomTonesProfile" : "Profile1",
+            "IP" : "127.0.0.1",
+            "LinkOperationMode" : "E1",
+            "Model" : "UMG SBC",
+            "Type" : "EBS_MODULAR-CTI"
+         }
+      ]
+   },
+   "dspprofiles" : {
+      "CustomDetectionTonesProfiles" : [
+         {
+            "Profile1" : [
+               {
+                  "Frequency" : 300,
+                  "MaxPower" : 0,
+                  "MinPower" : -40,
+                  "Tolerance" : 5,
+                  "ValidationTime" : 40
+               },
+               {
+                  "Frequency" : 940,
+                  "MaxPower" : 0,
+                  "MinPower" : -38,
+                  "Tolerance" : 5,
+                  "ValidationTime" : 40
+               },
+               {
+                  "Frequency" : 1400,
+                  "MaxPower" : 0,
+                  "MinPower" : -38,
+                  "Tolerance" : 5,
+                  "ValidationTime" : 40
+               },
+               {
+                  "Frequency" : 1800,
+                  "MaxPower" : 0,
+                  "MinPower" : -38,
+                  "Tolerance" : 5,
+                  "ValidationTime" : 40
+               },
+               {
+                  "Frequency" : 1400,
+                  "MaxPower" : 0,
+                  "MinPower" : -42,
+                  "Tolerance" : 5,
+                  "ValidationTime" : 40
+               }
+            ]
+         }
+      ],
+      "DspProfiles" : [
+         {
+            "Default" : {
+               "AgcMaxGain" : 4,
+               "DialToneMaxFreq" : 450,
+               "DialToneMaxHarmonicDist" : 0.80,
+               "DialToneMaxPower" : 0,
+               "DialToneMinFreq" : 400,
+               "DialToneMinPower" : -39,
+               "DialToneValidationTime" : 40,
+               "DtmfMaxHarmonicDist" : 0.70,
+               "DtmfMaxPower" : 0,
+               "DtmfMaxTwist" : -12,
+               "DtmfMinPower" : -36,
+               "DtmfSuppressionTime" : 10,
+               "DtmfTolerance" : 2.50,
+               "DtmfValidationTime" : 48,
+               "DualToneMaxPower" : 0,
+               "DualToneMinPower" : -36,
+               "DualToneTolerance" : 1.50,
+               "DualToneValidationTime" : 32,
+               "MfcValidationTime" : 24,
+               "SilenceMaxPower" : -33,
+               "SilenceValidationTime" : 48,
+               "VoiceValidationTime" : 80,
+               "t1000HzMaxPower" : 0,
+               "t1000HzMinPower" : -36,
+               "t1000HzTolerance" : 7.50,
+               "t1000HzValidationTime" : 32,
+               "t1100HzMaxPower" : 0,
+               "t1100HzMinPower" : -36,
+               "t1100HzTolerance" : 1.50,
+               "t1100HzValidationTime" : 32,
+               "t2100HzMaxPower" : 0,
+               "t2100HzMinPower" : -36,
+               "t2100HzTolerance" : 1.50,
+               "t2100HzValidationTime" : 32,
+               "t600HzMaxPower" : 0,
+               "t600HzMinPower" : -36,
+               "t600HzTolerance" : 7.50,
+               "t600HzValidationTime" : 32
+            }
+         },
+         {
+            "GSMDefault" : {
+               "AgcMaxGain" : 4,
+               "CallProgrMaxHarmonicDist" : 0.50,
+               "DialToneMaxFreq" : 450,
+               "DialToneMaxPower" : 0,
+               "DialToneMinFreq" : 400,
+               "DialToneMinPower" : -39,
+               "DialToneValidationTime" : 40,
+               "DtmfMaxHarmonicDist" : 0.50,
+               "DtmfMaxPower" : 60,
+               "DtmfMaxTwist" : -12,
+               "DtmfMinPower" : -25,
+               "DtmfSuppressionTime" : 25,
+               "DtmfTolerance" : 2.50,
+               "DtmfValidationTime" : 48,
+               "DualToneMaxPower" : -42,
+               "DualToneMinPower" : -36,
+               "DualToneTolerance" : 1.50,
+               "DualToneValidationTime" : 32,
+               "MfcValidationTime" : 24,
+               "SilenceMaxPower" : -42,
+               "SilenceValidationTime" : 48,
+               "VoiceValidationTime" : 80,
+               "t1000HzMaxPower" : 0,
+               "t1000HzMinPower" : -36,
+               "t1000HzTolerance" : 7.50,
+               "t1000HzValidationTime" : 32,
+               "t1100HzMaxPower" : 0,
+               "t1100HzMinPower" : -36,
+               "t1100HzTolerance" : 1.50,
+               "t1100HzValidationTime" : 32,
+               "t2100HzMaxPower" : 0,
+               "t2100HzMinPower" : -36,
+               "t2100HzTolerance" : 1.50,
+               "t2100HzValidationTime" : 32,
+               "t600HzMaxPower" : 0,
+               "t600HzMinPower" : -36,
+               "t600HzTolerance" : 7.50,
+               "t600HzValidationTime" : 32
+            }
+         },
+         {
+            "FXODefault" : {
+               "AgcMaxGain" : 4,
+               "DialToneMaxFreq" : 475,
+               "DialToneMaxHarmonicDist" : 0.80,
+               "DialToneMaxPower" : 0,
+               "DialToneMinFreq" : 400,
+               "DialToneMinPower" : -39,
+               "DialToneValidationTime" : 40,
+               "DtmfMaxHarmonicDist" : 0.70,
+               "DtmfMaxPower" : 0,
+               "DtmfMaxTwist" : -12,
+               "DtmfMinPower" : -36,
+               "DtmfSuppressionTime" : 10,
+               "DtmfTolerance" : 2.50,
+               "DtmfValidationTime" : 48,
+               "DualToneMaxPower" : 0,
+               "DualToneMinPower" : -36,
+               "DualToneTolerance" : 1.50,
+               "DualToneValidationTime" : 72,
+               "MfcValidationTime" : 24,
+               "SilenceMaxPower" : -42,
+               "SilenceValidationTime" : 48,
+               "VoiceValidationTime" : 80,
+               "t1000HzMaxPower" : 0,
+               "t1000HzMinPower" : -36,
+               "t1000HzTolerance" : 7.50,
+               "t1000HzValidationTime" : 32,
+               "t1100HzMaxPower" : 0,
+               "t1100HzMinPower" : -36,
+               "t1100HzTolerance" : 1.50,
+               "t1100HzValidationTime" : 32,
+               "t2100HzMaxPower" : 0,
+               "t2100HzMinPower" : -36,
+               "t2100HzTolerance" : 1.50,
+               "t2100HzValidationTime" : 32,
+               "t600HzMaxPower" : 0,
+               "t600HzMinPower" : -36,
+               "t600HzTolerance" : 7.50,
+               "t600HzValidationTime" : 32
+            }
+         }
+      ]
+   },
+   "dyndns" : {
+      "DynDNS" : {
+         "MyHostName" : "",
+         "Password" : "",
+         "Provider" : "",
+         "Update" : 60,
+         "User" : ""
+      }
+   },
+   "fail2ban" : {
+      "Fail2Ban" : {
+         "Enabled" : false,
+         "Files" : [
+            {
+               "Enabled" : true,
+               "FilePath" : "/var/log/khomp/volatile/fail2ban-gateway.log",
+               "Match" : "Failed .*: \\(.*\\)"
+            },
+            {
+               "Enabled" : true,
+               "FilePath" : "/var/log/khomp/volatile/fail2ban-survivability.log",
+               "Match" : "Failed .*: \\(.*\\)"
+            }
+         ],
+         "Limit" : 3,
+         "Timeout" : 600,
+         "Whitelist" : []
+      }
+   },
+   "gateway" : {
+      "Audit" : {
+         "End" : 30,
+         "Routes" : [],
+         "Start" : "",
+         "WholeCall" : false
+      },
+      "CDR" : {
+         "BasePath" : "/var/cdr/",
+         "Enabled" : false,
+         "FTP" : {
+            "Destination" : "",
+            "Enabled" : false,
+            "Password" : "",
+            "Port" : "",
+            "Server" : "",
+            "User" : ""
+         },
+         "Pattern" : "'${callid}','${leg_a}','${leg_b}','${orig_addr}','${dest_addr}','${leg_b_orig_addr}','${leg_b_dest_addr}','${start_stamp:%d-%m-%Y %H:%M:%S}','${audio_stamp:%d-%m-%Y %H:%M:%S}','${answer_stamp:%d-%m-%Y %H:%M:%S}','${end_stamp:%d-%m-%Y %H:%M:%S}','${duration}','${billsec}','${hangup_origin}','${hangup_cause}','${orig_nap}','${dest_nap}','${route_name}'",
+         "Radius" : {
+            "DateFormat" : "%H:%M:%S.@m %z %a %b %d %Y",
+            "DeadServerDisabledTime" : 0,
+            "Enabled" : false,
+            "ParallelRequests" : 10,
+            "QueueSizeDiscardAll" : 5000,
+            "QueueSizeDiscardStart" : 3000,
+            "Retries" : 3,
+            "Servers" : [],
+            "Timeout" : 10
+         },
+         "Rotate" : "daily",
+         "Style" : "per try"
+      },
+      "CodecProfiles" : [
+         {
+            "CodecList" : [ "G711A", "G711U", "G729A", "G723", "G726" ],
+            "Name" : "Todos"
+         },
+         {
+            "CodecList" : [ "G711A", "G711U" ],
+            "Name" : "G711"
+         },
+         {
+            "CodecList" : [ "G729A" ],
+            "Name" : "G729"
+         },
+         {
+            "CodecList" : [ "G711A", "G711U" ],
+            "Name" : "Padrão"
+         },
+         {
+            "CodecList" : [ "G711A", "G711U", "G729A", "G723", "G726" ],
+            "Name" : "Widecloud2"
+         },
+         {
+            "CodecList" : [ "G711A", "G711U", "G729A", "G723", "G726" ],
+            "Name" : "Algar"
+         }
+      ],
+      "MaxEbs" : 1,
+      "NAPs" : [
+         {
+            "AudioTransportType" : "UDP",
+            "AuthorizationUser" : "7132898550",
+            "ChannelAllocator" : {
+               "Algorithm" : "FIRSTFREE",
+               "Sort" : "SORT_BY_DEVICE_ASC"
+            },
+            "CodecProfile" : "Widecloud2",
+            "Domain" : "widecloud2.intelbras.com.br",
+            "DomainPort" : 7048,
+            "DomainUseIpPacketAddress" : false,
+            "EnforceUsername" : "always",
+            "Expires" : 60,
+            "ExternalRtpAddress" : "",
+            "ExternalSipAddress" : "",
+            "FallbackTimeout" : 5000,
+            "ForceIncomingCallFromProxy" : false,
+            "ForceRtpInterface" : "eth0",
+            "ForceSipInterface" : "eth0",
+            "IgnoreSourcePort" : true,
+            "KeepAlive" : false,
+            "KeepAliveInterval" : 0,
+            "NATTraversalMode" : "",
+            "Name" : "Widecloud2",
+            "Password" : "SsMDsxHbtYqjDe2Q",
+            "Profile" : "Widecloud2",
+            "ProxyList" : [],
+            "Register" : true,
+            "SessionExpires" : 1800,
+            "SipFromHostport" : "",
+            "SipTransportType" : "TCP",
+            "StunServer" : "",
+            "StunServerPort" : 1,
+            "Type" : "SIP",
+            "UseCalledFromRequestURI" : false,
+            "UsePAssertedIdentity" : true,
+            "UseWanInterface" : false,
+            "UserAgent" : "",
+            "Username" : "7132898550",
+            "Visible" : true
+         },
+         {
+            "AudioTransportType" : "UDP",
+            "AuthorizationUser" : "",
+            "ChannelAllocator" : {
+               "Algorithm" : "FIRSTFREE",
+               "Sort" : "SORT_BY_DEVICE_ASC"
+            },
+            "CodecProfile" : "Algar",
+            "Domain" : "172.28.11.4",
+            "DomainPort" : 5060,
+            "DomainUseIpPacketAddress" : false,
+            "EnforceUsername" : "always",
+            "Expires" : 3600,
+            "ExternalRtpAddress" : "",
+            "ExternalSipAddress" : "",
+            "FallbackTimeout" : 5000,
+            "ForceIncomingCallFromProxy" : false,
+            "ForceRtpInterface" : "eth3",
+            "ForceSipInterface" : "eth3",
+            "IgnoreSourcePort" : true,
+            "KeepAlive" : true,
+            "KeepAliveInterval" : 40000,
+            "NATTraversalMode" : "",
+            "Name" : "Algar",
+            "Password" : "",
+            "Profile" : "Algar",
+            "ProxyList" : [],
+            "Register" : false,
+            "SessionExpires" : 1800,
+            "SipFromHostport" : "",
+            "SipTransportType" : "UDP",
+            "StunServer" : "",
+            "StunServerPort" : 1,
+            "Type" : "SIP",
+            "UseCalledFromRequestURI" : false,
+            "UsePAssertedIdentity" : false,
+            "UseWanInterface" : false,
+            "UserAgent" : "",
+            "Username" : "",
+            "Visible" : true
+         }
+      ],
+      "Routes" : [
+         {
+            "AdvancedUMGRoute" : false,
+            "Called" : "",
+            "Caller" : "",
+            "CodecProfile" : "Algar",
+            "DestinationNAP" : "Algar",
+            "DestinationProfile" : "",
+            "DestinationServiceProvider" : "",
+            "IncommingSipDisplayNameAsOrigin" : false,
+            "Name" : "Saida",
+            "OriginNAP" : "Widecloud2",
+            "PortabilityRegex" : "",
+            "Priority" : 0,
+            "RemapCalled" : "",
+            "RemapCaller" : "",
+            "Time" : ""
+         },
+         {
+            "AdvancedUMGRoute" : false,
+            "Called" : "^7132898550[0-9]*",
+            "Caller" : "",
+            "CodecProfile" : "Widecloud2",
+            "DestinationNAP" : "Widecloud2",
+            "DestinationProfile" : "",
+            "DestinationServiceProvider" : "",
+            "IncommingSipDisplayNameAsOrigin" : false,
+            "Name" : "Entrada",
+            "OriginNAP" : "Algar",
+            "PortabilityRegex" : "",
+            "Priority" : 0,
+            "RemapCalled" : "/^7132898550([0-9]*)/KHOMP7132898550$1/",
+            "RemapCaller" : "7132898550",
+            "Time" : ""
+         }
+      ],
+      "RoutesSMS" : [],
+      "SIMCards" : [],
+      "Settings" : {
+         "CodecSupport" : {
+            "SBC" : "g729",
+            "TDM2SIP" : "g711"
+         }
+      },
+      "TimeRestraints" : [
+         {
+            "Day" : "",
+            "Hour" : "08:00-22:00",
+            "Month" : "",
+            "Name" : "Horário comercial",
+            "WDay" : "1,2,3,4,5"
+         },
+         {
+            "Day" : "",
+            "Hour" : "08:00-11:59",
+            "Month" : "",
+            "Name" : "Horário comercial (sábado)",
+            "WDay" : "6"
+         },
+         {
+            "Day" : "",
+            "Hour" : "07:00-11:59",
+            "Month" : "",
+            "Name" : "Manhã",
+            "WDay" : ""
+         },
+         {
+            "Day" : "",
+            "Hour" : "12:00-17:59",
+            "Month" : "",
+            "Name" : "Tarde",
+            "WDay" : ""
+         },
+         {
+            "Day" : "",
+            "Hour" : "18:00-23:59",
+            "Month" : "",
+            "Name" : "Noite",
+            "WDay" : ""
+         },
+         {
+            "Day" : "",
+            "Hour" : "00:00-06:59",
+            "Month" : "",
+            "Name" : "Madrugada",
+            "WDay" : ""
+         }
+      ],
+      "TimeTrackPatterns" : [
+         {
+            "Delay" : 0,
+            "First" : 30,
+            "Locked" : false,
+            "Name" : "30/6",
+            "Next" : 6
+         },
+         {
+            "Delay" : 0,
+            "First" : 60,
+            "Locked" : false,
+            "Name" : "60/6",
+            "Next" : 6
+         },
+         {
+            "Delay" : 0,
+            "First" : 60,
+            "Locked" : false,
+            "Name" : "60/60",
+            "Next" : 60
+         }
+      ]
+   },
+   "gatewayprofile" : {
+      "Default" : "Padrão",
+      "Profiles" : [
+         {
+            "Cadences" : {
+               "Enabled" : true,
+               "Ringback" : "1000,4000",
+               "Trying" : "25,500,25,2000"
+            },
+            "CauseMap" : [],
+            "DisableFeatures" : [ "AutoGainControl" ],
+            "EnableFeatures" : [ "EchoCanceller", "DTMFSupression" ],
+            "FAX" : {
+               "DisableFeatures" : [ "All" ],
+               "EnableFeatures" : [ "EchoCanceller" ],
+               "Mode" : "T38"
+            },
+            "FXS" : {
+               "DefaultRingPattern" : "1000,4000",
+               "DialPlan" : [],
+               "RingPatterns" : []
+            },
+            "Name" : "Padrão",
+            "R2" : {
+               "BCondition" : {
+                  "AlwaysB1" : true,
+                  "Default" : 1,
+                  "Timeout" : 0
+               },
+               "DoubleAnswer" : {
+                  "Enabled" : true,
+                  "Timeout" : 1000
+               },
+               "ForcedDisconnection" : "standard"
+            },
+            "ReadOnly" : true,
+            "SIP" : {
+               "RelayExtensionHeaders" : false
+            },
+            "VolumeGain" : 0
+         },
+         {
+            "Cadences" : {
+               "Enabled" : true,
+               "Ringback" : "1000,4000",
+               "Trying" : "25,500,25,2000"
+            },
+            "CauseMap" : [],
+            "DisableFeatures" : [ "AutoGainControl" ],
+            "EnableFeatures" : [ "EchoCanceller", "DTMFSupression" ],
+            "FAX" : {
+               "DisableFeatures" : [ "All" ],
+               "EnableFeatures" : [],
+               "Mode" : "PassThrough"
+            },
+            "FXS" : {
+               "DefaultRingPattern" : "1000,4000",
+               "DialPlan" : [],
+               "RingPatterns" : []
+            },
+            "Name" : "Pass-through (fax)",
+            "R2" : {
+               "BCondition" : {
+                  "AlwaysB1" : true,
+                  "Default" : 1,
+                  "Timeout" : 0
+               },
+               "DoubleAnswer" : {
+                  "Enabled" : true,
+                  "Timeout" : 1000
+               },
+               "ForcedDisconnection" : "standard"
+            },
+            "ReadOnly" : true,
+            "SIP" : {
+               "RelayExtensionHeaders" : false
+            },
+            "VolumeGain" : 0
+         },
+         {
+            "Cadences" : {
+               "Enabled" : true,
+               "Ringback" : "1000,4000",
+               "Trying" : "25,500,25,2000"
+            },
+            "CauseMap" : [],
+            "DisableFeatures" : [ "All" ],
+            "EnableFeatures" : [],
+            "FAX" : {
+               "DisableFeatures" : [],
+               "EnableFeatures" : [],
+               "Mode" : "Disabled"
+            },
+            "FXS" : {
+               "DefaultRingPattern" : "1000,4000",
+               "DialPlan" : [],
+               "RingPatterns" : []
+            },
+            "Name" : "Pass-through (dados)",
+            "R2" : {
+               "BCondition" : {
+                  "AlwaysB1" : true,
+                  "Default" : 1,
+                  "Timeout" : 0
+               },
+               "DoubleAnswer" : {
+                  "Enabled" : true,
+                  "Timeout" : 1000
+               },
+               "ForcedDisconnection" : "standard"
+            },
+            "ReadOnly" : true,
+            "SIP" : {
+               "RelayExtensionHeaders" : false
+            }
+         },
+         {
+            "Cadences" : {
+               "Enabled" : true,
+               "Ringback" : "1000,4000",
+               "Trying" : "25,500,25,2000"
+            },
+            "CauseMap" : [],
+            "DisableFeatures" : [ "AutoGainControl" ],
+            "EnableFeatures" : [ "EchoCanceller", "DTMFSupression" ],
+            "FAX" : {
+               "DisableFeatures" : [ "All" ],
+               "EnableFeatures" : [],
+               "Mode" : "PassThrough"
+            },
+            "FXS" : {
+               "DefaultRingPattern" : "1000,4000",
+               "DialPlan" : [],
+               "RingPatterns" : []
+            },
+            "ForwardDisplayName" : false,
+            "Name" : "Widecloud2",
+            "R2" : {
+               "BCondition" : {
+                  "AlwaysB1" : true,
+                  "Default" : 1,
+                  "Timeout" : 0
+               },
+               "DoubleAnswer" : {
+                  "Enabled" : true,
+                  "Timeout" : 1000
+               },
+               "ForcedDisconnection" : "standard"
+            },
+            "ReadOnly" : true,
+            "SIP" : {
+               "CustomHeaders" : [],
+               "EnableEarlyMediaBehavior" : false,
+               "RelayExtensionHeaders" : false,
+               "SIPDtmfDelivery" : "RFC_2833",
+               "SipCollectCallDestParam" : "",
+               "SipCollectCallHeader" : "",
+               "SipCollectCallOrigParam" : [],
+               "UseRegisterUsernameOnContact" : false
+            },
+            "VolumeGain" : 0
+         },
+         {
+            "Cadences" : {
+               "Enabled" : true,
+               "Ringback" : "1000,4000",
+               "Trying" : "25,500,25,2000"
+            },
+            "CauseMap" : [],
+            "ConnectOriginAfterDial" : false,
+            "DisableFeatures" : [ "AutoGainControl" ],
+            "EnableFeatures" : [ "EchoCanceller", "DTMFSupression" ],
+            "FAX" : {
+               "DisableFeatures" : [ "All" ],
+               "EnableFeatures" : [],
+               "Mode" : "PassThrough"
+            },
+            "FXS" : {
+               "DefaultRingPattern" : "1000,4000",
+               "DialPlan" : null,
+               "RingPatterns" : []
+            },
+            "ForwardDisplayName" : false,
+            "Name" : "Algar",
+            "R2" : {
+               "BCondition" : {
+                  "AlwaysB1" : true,
+                  "Default" : 1,
+                  "Timeout" : 0
+               },
+               "DoubleAnswer" : {
+                  "Enabled" : true,
+                  "Timeout" : 1000
+               },
+               "ForcedDisconnection" : "standard"
+            },
+            "ReadOnly" : true,
+            "SIP" : {
+               "CustomHeaders" : [],
+               "EnableEarlyMediaBehavior" : false,
+               "RelayExtensionHeaders" : false,
+               "SIPDtmfDelivery" : "RFC_2833",
+               "SipCollectCallDestParam" : "",
+               "SipCollectCallHeader" : "",
+               "SipCollectCallOrigParam" : [],
+               "UseRegisterUsernameOnContact" : false
+            },
+            "VolumeGain" : 0
+         }
+      ]
+   },
+   "knotification" : {
+      "TransportMapping" : [
+         {
+            "Transport" : "",
+            "Type" : "SMS-ERROR"
+         },
+         {
+            "Transport" : "",
+            "Type" : "SMS-MESSAGE"
+         },
+         {
+            "Transport" : "",
+            "Type" : "SMS-CONFIRMATION"
+         }
+      ],
+      "Transports" : []
+   },
+   "ksbc" : {
+      "Actions" : {
+         "InviteMethod" : [],
+         "PreAllMethods" : [],
+         "RegisterMethod" : []
+      },
+      "MediaProfile" : [
+         {
+            "Codecs" : [ "G711A", "G711U", "G729A" ],
+            "DTMFMode" : "BRIDGE",
+            "Name" : "PROXY",
+            "Transports" : [
+               {
+                  "Media" : "UDP-RTP",
+                  "SIP" : "UDP"
+               },
+               {
+                  "Media" : "UDP-RTP",
+                  "SIP" : "TCP"
+               },
+               {
+                  "Media" : "UDP-RTP",
+                  "SIP" : "TLS"
+               }
+            ],
+            "UID" : "PROXY"
+         },
+         {
+            "Codecs" : [ "G711A", "G711U", "G729A" ],
+            "DTMFMode" : "BRIDGE",
+            "Name" : "PABX0",
+            "Transports" : [
+               {
+                  "Media" : "UDP-RTP",
+                  "SIP" : "UDP"
+               },
+               {
+                  "Media" : "UDP-RTP",
+                  "SIP" : "TCP"
+               },
+               {
+                  "Media" : "UDP-RTP",
+                  "SIP" : "TLS"
+               }
+            ],
+            "UID" : "PABX0"
+         }
+      ],
+      "Policies" : [],
+      "Settings" : {
+         "BackToBack" : {
+            "Authorization" : {
+               "Ldap" : {
+                  "Bind" : {
+                     "DN" : "",
+                     "Enabled" : false,
+                     "Password" : ""
+                  },
+                  "Query" : {
+                     "Attribute" : [],
+                     "Base" : "",
+                     "Filter" : "",
+                     "Scope" : "ONE-LEVEL"
+                  },
+                  "Servers" : []
+               },
+               "Realm" : "Khomp"
+            },
+            "Expires" : {
+               "UACDefault" : 60,
+               "UACMaximum" : 60,
+               "UACMinimum" : 60,
+               "UASRequest" : 600
+            }
+         },
+         "BehaviorMode" : "FORWARD",
+         "KeepAliveUACs" : {
+            "TCP" : 0,
+            "TLS" : 0,
+            "UDP" : 0
+         },
+         "KeepUnknownHeaders" : false,
+         "KeepUserAgent" : false,
+         "Media" : {
+            "MaxPort" : 16000,
+            "MinPort" : 15000,
+            "ReuseCryptoKeyOnReInvite" : false
+         },
+         "StrictAOR" : false,
+         "UASEndpointSelectedByTransport" : false
+      },
+      "UA" : [
+         {
+            "Address" : "192.168.2.154",
+            "BindToDevice" : "AUTOMATIC",
+            "Enabled" : false,
+            "Name" : "eth0",
+            "TLSUID" : "0",
+            "Transport" : {
+               "TCP" : 5080,
+               "TLS" : 5081,
+               "UDP" : 5080
+            },
+            "UID" : "eth0"
+         },
+         {
+            "Address" : "",
+            "BindToDevice" : "AUTOMATIC",
+            "Enabled" : false,
+            "Name" : "eth1",
+            "TLSUID" : "0",
+            "Transport" : {
+               "TCP" : 5080,
+               "TLS" : 5081,
+               "UDP" : 5080
+            },
+            "UID" : "eth1"
+         },
+         {
+            "Address" : "10.82.74.121",
+            "BindToDevice" : "AUTOMATIC",
+            "Enabled" : false,
+            "Name" : "eth2",
+            "TLSUID" : "0",
+            "Transport" : {
+               "TCP" : 5080,
+               "TLS" : 5081,
+               "UDP" : 5080
+            },
+            "UID" : "eth2"
+         },
+         {
+            "Address" : "10.82.74.121",
+            "BindToDevice" : "AUTOMATIC",
+            "Enabled" : false,
+            "Name" : "eth3",
+            "TLSUID" : "0",
+            "Transport" : {
+               "TCP" : 5080,
+               "TLS" : 5081,
+               "UDP" : 5080
+            },
+            "UID" : "eth3"
+         },
+         {
+            "Address" : "",
+            "BindToDevice" : "AUTOMATIC",
+            "Enabled" : false,
+            "Name" : "vpn0",
+            "TLSUID" : "0",
+            "Transport" : {
+               "TCP" : 5080,
+               "TLS" : 5081,
+               "UDP" : 5080
+            },
+            "UID" : "vpn0"
+         }
+      ],
+      "UAS" : [
+         {
+            "Domain" : "",
+            "Endpoints" : [
+               {
+                  "Address" : "",
+                  "KeepAlive" : {
+                     "Method" : "SIP-OPTIONS",
+                     "Timeout" : 20
+                  },
+                  "Port" : 5060,
+                  "Priority" : 0,
+                  "Transport" : "UDP",
+                  "UIDUA" : "eth0",
+                  "Weight" : 11
+               }
+            ],
+            "Media" : {
+               "Mode" : "TRANSCODE",
+               "Profile" : {
+                  "UAC" : "PROXY",
+                  "UAS" : "PABX0"
+               }
+            },
+            "Name" : "PABX0",
+            "UID" : "PABX0"
+         }
+      ]
+   },
+   "ksurvivability" : {
+      "UA" : [],
+      "UAS" : []
+   },
+   "licenseclient" : {
+      "CloudInterval" : 4,
+      "ConnectionTimeout" : 300000,
+      "LicenseServerList" : [ "licenseserver.svc.khomp.com", "licenseserver2.svc.khomp.com" ],
+      "LicenseServerPort" : 14140
+   },
+   "lte" : {
+      "LTE" : {
+         "APN" : [
+            {
+               "APN" : "",
+               "Password" : "",
+               "Username" : ""
+            },
+            {
+               "APN" : "",
+               "Password" : "",
+               "Username" : ""
+            }
+         ],
+         "AutomaticAPN" : false,
+         "SIMCard" : 0
+      }
+   },
+   "metaData" : {
+      "Version" : "3.0.38.6"
+   },
+   "mspeed" : {
+      "Mindspeed" : {
+         "ConfortNoiseGeneration" : 0,
+         "DCRemovalFilter" : 0,
+         "DFECBackgroundNoiseReplacement" : 0,
+         "DFECDinamycAttenuation" : 0,
+         "DFECEchoPathFilterControl" : 0,
+         "DFECReceiveInputDCFilterEnable" : 0,
+         "DFECSparseForeground" : 0,
+         "DFECToneTransmitterStatus" : 0,
+         "EchoCancellerMode" : 0,
+         "FilterFreeze" : 0,
+         "Initialization" : 1,
+         "NonLinearProcessing" : 0,
+         "STDG168Initialization" : 0,
+         "STDNlpHi" : 0,
+         "STDNlpLow" : 0,
+         "TailLength" : 64
+      }
+   },
+   "networkwatcher" : {
+      "NetworkWatcher" : {
+         "Active" : false,
+         "CurrentWan" : "",
+         "Interfaces" : [
+            {
+               "Active" : false,
+               "Frequency" : 5,
+               "HTTP" : {
+                  "Timeout" : 10,
+                  "URL" : "https://www.google.com"
+               },
+               "Interface" : "eth0",
+               "Retries" : 1
+            }
+         ]
+      }
+   },
+   "profiles" : {
+      "ChannelGroupProfiles" : [
+         {
+            "R2" : {
+               "AnswerSignalReceptionTimeout" : 90000,
+               "BillingPulseMaxTime" : 200,
+               "Channels" : {
+                  "Default" : 3
+               },
+               "DestEoNStandard" : 0,
+               "DisconnectConfirmationTime" : 90000,
+               "ForcedDisconnection" : false,
+               "ForwardMfcReceptionTimeout" : 7000,
+               "ForwardMfcSendingTimeout" : 15000,
+               "ForwardMfcSilenceTimeout" : 20000,
+               "IdentityRequestPosition" : 1,
+               "MfcPulseTime" : 150,
+               "OrigEoNStandard" : true,
+               "R2MinLineSendTime" : 100,
+               "RingbackSilenceTime" : 4000,
+               "RingbackToneTime" : 1000,
+               "SeizeConfirmationTimeout" : 2000,
+               "SeizeTimeout" : 7000,
+               "SubType" : "MFC",
+               "Type" : "R2"
+            }
+         },
+         {
+            "R2Passive" : {
+               "AnswerSignalReceptionTimeout" : 90000,
+               "BillingPulseMaxTime" : 200,
+               "Channels" : {
+                  "Default" : 3
+               },
+               "DestEoNStandard" : 0,
+               "DisconnectConfirmationTime" : 90000,
+               "ForcedDisconnection" : false,
+               "ForwardMfcReceptionTimeout" : 7000,
+               "ForwardMfcSendingTimeout" : 15000,
+               "ForwardMfcSilenceTimeout" : 20000,
+               "IdentityRequestPosition" : 1,
+               "MfcPulseTime" : 150,
+               "OrigEoNStandard" : true,
+               "R2MinLineSendTime" : 100,
+               "RingbackSilenceTime" : 4000,
+               "RingbackToneTime" : 1000,
+               "SeizeConfirmationTimeout" : 2000,
+               "SeizeTimeout" : 7000,
+               "SubType" : "Passive",
+               "Type" : "R2"
+            }
+         },
+         {
+            "ISDN" : {
+               "AllowTransmissionInTimeoutRecovery" : false,
+               "AlwaysSendChannelId" : true,
+               "DefaultBearerCapability" : "0x10 - Audio 3.1 KHz",
+               "DefaultDestNumberingPlan" : "0x00 - Unknown",
+               "DefaultDestTypeOfNumber" : "0x00 - Unknown",
+               "DefaultHLC" : "0x81 - Telephony",
+               "DefaultOrigNumberingPlan" : "0x00 - Unknown",
+               "DefaultOrigPresentation" : "0x00 - Presentation Allowed",
+               "DefaultOrigScreening" : "0x00 - UserProvidedNotScreened",
+               "DefaultOrigTypeOfNumber" : "0x00 - Unknown",
+               "IsdnTimers" : {
+                  "CTt1" : 10000,
+                  "CTt3" : 50000,
+                  "FailHysteresis" : 15000,
+                  "RejectRecovery" : 20000,
+                  "SSCTt1" : 50000,
+                  "T200" : 1000,
+                  "T203" : 10000,
+                  "T301" : 180000,
+                  "T302" : 15000,
+                  "T303" : 4000,
+                  "T304" : 30000,
+                  "T305" : 30000,
+                  "T308" : 4000,
+                  "T309" : 90000,
+                  "T310" : 50000,
+                  "T313" : 4000
+               },
+               "LAPDWindowSize" : 20,
+               "RestartProcedureOnLinkEstablish" : "single",
+               "SendOrigPresentationAndScreening" : false,
+               "SubType" : "EndPoint",
+               "TimeslotOffsetOption" : 0,
+               "Type" : "ISDN"
+            }
+         },
+         {
+            "ISDNNetwork" : {
+               "AllowTransmissionInTimeoutRecovery" : false,
+               "AlwaysSendChannelId" : true,
+               "DefaultBearerCapability" : "0x10 - Audio 3.1 KHz",
+               "DefaultDestNumberingPlan" : "0x00 - Unknown",
+               "DefaultDestTypeOfNumber" : "0x00 - Unknown",
+               "DefaultHLC" : "0x81 - Telephony",
+               "DefaultOrigNumberingPlan" : "0x00 - Unknown",
+               "DefaultOrigPresentation" : "0x00 - Presentation Allowed",
+               "DefaultOrigScreening" : "0x00 - UserProvidedNotScreened",
+               "DefaultOrigTypeOfNumber" : "0x00 - Unknown",
+               "IsdnTimers" : {
+                  "CTt1" : 10000,
+                  "CTt3" : 50000,
+                  "FailHysteresis" : 15000,
+                  "RejectRecovery" : 20000,
+                  "SSCTt1" : 50000,
+                  "T200" : 1000,
+                  "T203" : 10000,
+                  "T301" : 180000,
+                  "T302" : 15000,
+                  "T303" : 4000,
+                  "T304" : 30000,
+                  "T305" : 30000,
+                  "T308" : 4000,
+                  "T309" : 90000,
+                  "T310" : 50000,
+                  "T313" : 4000
+               },
+               "LAPDWindowSize" : 20,
+               "RestartProcedureOnLinkEstablish" : "single",
+               "SendOrigPresentationAndScreening" : false,
+               "SubType" : "Network",
+               "TimeslotOffsetOption" : 0,
+               "Type" : "ISDN"
+            }
+         },
+         {
+            "ISDNPassive" : {
+               "AllowTransmissionInTimeoutRecovery" : false,
+               "AlwaysSendChannelId" : true,
+               "DefaultBearerCapability" : "0x10 - Audio 3.1 KHz",
+               "DefaultDestNumberingPlan" : "0x00 - Unknown",
+               "DefaultDestTypeOfNumber" : "0x00 - Unknown",
+               "DefaultHLC" : "0x81 - Telephony",
+               "DefaultOrigNumberingPlan" : "0x00 - Unknown",
+               "DefaultOrigPresentation" : "0x00 - Presentation Allowed",
+               "DefaultOrigScreening" : "0x00 - UserProvidedNotScreened",
+               "DefaultOrigTypeOfNumber" : "0x00 - Unknown",
+               "IsdnTimers" : {
+                  "CTt1" : 10000,
+                  "CTt3" : 50000,
+                  "FailHysteresis" : 15000,
+                  "RejectRecovery" : 20000,
+                  "SSCTt1" : 50000,
+                  "T200" : 1000,
+                  "T203" : 10000,
+                  "T301" : 180000,
+                  "T302" : 15000,
+                  "T303" : 4000,
+                  "T304" : 30000,
+                  "T305" : 30000,
+                  "T308" : 4000,
+                  "T309" : 90000,
+                  "T310" : 50000,
+                  "T313" : 4000
+               },
+               "LAPDWindowSize" : 7,
+               "RestartProcedureOnLinkEstablish" : "single",
+               "SendOrigPresentationAndScreening" : false,
+               "SubType" : "Passive",
+               "TimeslotOffsetOption" : "0 - Padrão(1-15 17-31)",
+               "Type" : "ISDN"
+            }
+         },
+         {
+            "GSM" : {
+               "CheckNetworkTimeOut" : 30000,
+               "DefaultSmsTextCoding" : "iso8859-1",
+               "DisableCallForward" : true,
+               "EnableCallHold" : false,
+               "HexEncodeReceived8bitSms" : true,
+               "ReceivePduSms" : false,
+               "SendDtmfBySignaling" : false,
+               "TimeOutModem" : 30000,
+               "Type" : "GSM"
+            }
+         },
+         {
+            "FXS" : {
+               "CadenceTimes" : [ 1000, 4000, 1000, 4000 ],
+               "CallerIdProfile" : "DTMF Anatel",
+               "FlashThresholdTime" : 0,
+               "FlashValidationTime" : 500,
+               "LineDistance" : "2 - Long",
+               "Type" : "FXS"
+            }
+         },
+         {
+            "FXO-0" : {
+               "CallerIdProfile" : "DTMF Anatel",
+               "DisconnectOnPolarityReversal" : false,
+               "FlashTime" : 400,
+               "FlashValidationTime" : 500,
+               "LineTerminationImpedance" : 0,
+               "RingsToNotify" : 1,
+               "SeizeTimeout" : 7000,
+               "Type" : "FXO"
+            }
+         },
+         {
+            "FXO-1" : {
+               "CallerIdProfile" : "DTMF Anatel",
+               "DisconnectOnPolarityReversal" : false,
+               "FlashTime" : 400,
+               "FlashValidationTime" : 500,
+               "LineTerminationImpedance" : 0,
+               "RingsToNotify" : 1,
+               "SeizeTimeout" : 7000,
+               "Type" : "FXO"
+            }
+         },
+         {
+            "FXO-2" : {
+               "CallerIdProfile" : "DTMF Anatel",
+               "DisconnectOnPolarityReversal" : false,
+               "FlashTime" : 400,
+               "FlashValidationTime" : 500,
+               "LineTerminationImpedance" : 0,
+               "RingsToNotify" : 1,
+               "SeizeTimeout" : 7000,
+               "Type" : "FXO"
+            }
+         },
+         {
+            "ISUP" : {
+               "SubType" : "Endpoint",
+               "Type" : "ISUP"
+            }
+         },
+         {
+            "ISUPPassive" : {
+               "SubType" : "Passive",
+               "Type" : "ISUP"
+            }
+         }
+      ]
+   },
+   "ss7" : {
+      "ss7" : {
+         "Isup" : {
+            "CircuitGroups" : [],
+            "Timers" : {
+               "T1" : 45000,
+               "T12" : 45000,
+               "T13" : 600000,
+               "T14" : 45000,
+               "T15" : 600000,
+               "T16" : 45000,
+               "T17" : 600000,
+               "T18" : 45000,
+               "T19" : 600000,
+               "T20" : 45000,
+               "T21" : 600000,
+               "T22" : 45000,
+               "T23" : 600000,
+               "T24" : 1500,
+               "T25" : 5000,
+               "T26" : 120000,
+               "T27" : 240000,
+               "T28" : 10000,
+               "T34" : 3000,
+               "T36" : 13000,
+               "T37" : 3000,
+               "T38" : 120000,
+               "T5" : 600000,
+               "T6" : 35000,
+               "T7" : 25000,
+               "T8" : 13000,
+               "T9" : 120000
+            }
+         },
+         "Mtp2" : [],
+         "Mtp3" : {
+            "LinkSets" : [],
+            "Routes" : [],
+            "SignalingPointType" : "SP"
+         },
+         "PointCodes" : []
+      }
+   },
+   "system" : {
+      "CallAnalyzer" : {
+         "AnalysisTimeOut" : 15000,
+         "AnswerDuration" : 2250,
+         "AnswerFilterDuration" : 250,
+         "AnswerSilenceDuration" : 0,
+         "CellularBoxDuration" : 450,
+         "CellularBoxTolerance" : 100,
+         "CollectCallDuration" : 450,
+         "CollectCallTolerance" : 100,
+         "Duration600Hz" : 500,
+         "FilterTolerance600Hz" : 200,
+         "Tolerance600Hz" : 150
+      },
+      "CallProgress" : {
+         "AnswerTimeout" : 90000,
+         "BlindTimeAfterFlash" : 3000,
+         "Cadences" : [
+            {
+               "Cadence" : [ 250, 250 ],
+               "Code" : "A",
+               "Name" : "busy",
+               "Repetitions" : 2,
+               "Tolerance" : 50,
+               "Type" : 2
+            },
+            {
+               "Cadence" : [ 1000, 90 ],
+               "Code" : "B",
+               "Name" : "dial tone pabx",
+               "Repetitions" : 2,
+               "Tolerance" : 75,
+               "Type" : 0
+            },
+            {
+               "Cadence" : [ 1000, 4000 ],
+               "Code" : "C",
+               "Name" : "ringback",
+               "Repetitions" : 1,
+               "Tolerance" : 100,
+               "Type" : 1
+            },
+            {
+               "Cadence" : [ 125, 125 ],
+               "Code" : "D",
+               "Name" : "fast busy",
+               "Repetitions" : 3,
+               "Tolerance" : 50,
+               "Type" : 3
+            }
+         ],
+         "DedicatedLine" : false,
+         "DetectSilenceAsAnswer" : false,
+         "MinimumCadencePeriod" : 200,
+         "MinimumToneTime" : 100,
+         "SilenceTimeToDisconnect" : 600000,
+         "TimeForAutomaticSeizeSuccess" : 2000,
+         "Version" : 3,
+         "VoiceAnswerThreshold" : 160
+      },
+      "DSP" : {
+         "AgcGain" : [
+            {
+               "Filter" : "*.*",
+               "Value" : 4
+            }
+         ],
+         "Detection" : [
+            {
+               "Filter" : "*.*",
+               "Value" : {
+                  "DialToneDetectValidationTime" : 40,
+                  "DialToneMaxFreq" : 450,
+                  "DialToneMinFreq" : 400,
+                  "DialTonePower" : -39,
+                  "DtmfDetectValidationTime" : 48,
+                  "DtmfPower" : -36,
+                  "FaxDetecValidationTime" : 32,
+                  "SilenceDetectValidationTime" : 40,
+                  "VoiceDetecValidationTime" : 80,
+                  "VoicePower" : -42
+               }
+            }
+         ],
+         "EnabledFeatures" : [
+            {
+               "Filter" : "*.*",
+               "Value" : 1
+            }
+         ],
+         "Generation" : [
+            {
+               "Filter" : "*.*",
+               "Value" : {
+                  "BeepDuration" : 256,
+                  "BeepFrequency" : 1209,
+                  "BeepVolume" : 1,
+                  "DtmfGenTime" : 100,
+                  "SilenceGenTimeDtmf" : 100
+               }
+            }
+         ],
+         "PlayerAgcGain" : [
+            {
+               "Filter" : "*.*",
+               "Value" : 32
+            }
+         ]
+      },
+      "Fax" : {
+         "AddTimeout" : 5000,
+         "HeaderText" : "",
+         "ID" : ""
+      },
+      "Features" : {
+         "AutoAGC" : [],
+         "AutoCallAnalyzer" : [],
+         "AutoDtmfSuppression" : [],
+         "AutoEchoCanceller" : [],
+         "DropCollectCalls" : []
+      },
+      "K3Lr" : {
+         "Links" : [],
+         "ServerClient" : 0
+      },
+      "MediaServer" : {
+         "DspThreadCount" : 8,
+         "MaxAudioPort" : 52000,
+         "MinAudioPort" : 50000
+      },
+      "Network" : {
+         "K3LQueryPort" : 14130,
+         "K3LServerAddress" : "",
+         "K3LServerPort" : 14123,
+         "K3LSnmpPort" : 161,
+         "LocalAudioInterface" : "",
+         "LocalAudioPort" : 14200,
+         "MediaServerAddress" : "",
+         "MediaServerPort" : 14102,
+         "SignalingServerAddress" : "127.0.0.1"
+      },
+      "System" : {
+         "Dialplans" : [],
+         "DisconnectConfirmation" : "No",
+         "EnableAudioEvents" : false,
+         "EnableCadenceEvents" : false,
+         "ErrorCounterCheckInterval" : 5000,
+         "FXOLineSensibility" : [],
+         "IgnoredCounters" : [],
+         "MfcPatternCountry" : "0 - Brasil",
+         "Timezone" : "GMT-3"
+      },
+      "VoIP" : {
+         "CAFile" : "/etc/ssl/certs/ca-certificates.crt",
+         "CertificateFile" : "",
+         "ClientCertificateVerification" : false,
+         "Codecs" : [ "G711A", "G711U", "G729A", "G723", "G726" ],
+         "DisableSessionTimer" : false,
+         "HostnameCertificateVerification" : false,
+         "ListenPort" : 5060,
+         "MaxRtp" : 16000,
+         "MaxSrtp" : 16000,
+         "MediaToS" : "0xB8",
+         "MinRtp" : 10000,
+         "MinSrtp" : 10000,
+         "NetworkPacketSize" : 20,
+         "PrivateKeyFile" : "",
+         "PrivateKeyPassword" : "",
+         "Proxy" : "",
+         "RtpInterface" : [
+            {
+               "Disabled" : false,
+               "IPAddress" : "192.168.2.154",
+               "MaxRtp" : 10799,
+               "MaxSrtp" : 10999,
+               "MinRtp" : 10000,
+               "MinSrtp" : 10800,
+               "Name" : "eth0"
+            },
+            {
+               "Disabled" : true,
+               "IPAddress" : "",
+               "MaxRtp" : 11799,
+               "MaxSrtp" : 11999,
+               "MinRtp" : 11000,
+               "MinSrtp" : 11800,
+               "Name" : "eth1"
+            },
+            {
+               "Disabled" : true,
+               "IPAddress" : "10.82.74.121",
+               "MaxRtp" : 12799,
+               "MaxSrtp" : 12999,
+               "MinRtp" : 12000,
+               "MinSrtp" : 12800,
+               "Name" : "eth2"
+            },
+            {
+               "Disabled" : false,
+               "IPAddress" : "10.82.74.121",
+               "MaxRtp" : 13799,
+               "MaxSrtp" : 13999,
+               "MinRtp" : 13000,
+               "MinSrtp" : 13800,
+               "Name" : "eth3"
+            },
+            {
+               "Disabled" : true,
+               "IPAddress" : "",
+               "MaxRtp" : 14799,
+               "MaxSrtp" : 14999,
+               "MinRtp" : 14000,
+               "MinSrtp" : 14800,
+               "Name" : "vpn0"
+            }
+         ],
+         "SipInterface" : [
+            {
+               "Disabled" : false,
+               "IPAddress" : "192.168.2.154",
+               "Name" : "eth0",
+               "TcpPort" : 7048,
+               "TlsPort" : 5061,
+               "UdpPort" : 7048,
+               "WsPort" : 0,
+               "WssPort" : 0
+            },
+            {
+               "Disabled" : true,
+               "IPAddress" : "",
+               "Name" : "eth1",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060,
+               "WsPort" : 0,
+               "WssPort" : 0
+            },
+            {
+               "Disabled" : true,
+               "IPAddress" : "10.82.74.121",
+               "Name" : "eth2",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060,
+               "WsPort" : 0,
+               "WssPort" : 0
+            },
+            {
+               "Disabled" : false,
+               "IPAddress" : "10.82.74.121",
+               "Name" : "eth3",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060,
+               "WsPort" : 0,
+               "WssPort" : 0
+            },
+            {
+               "Disabled" : true,
+               "IPAddress" : "",
+               "Name" : "vpn0",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060,
+               "WsPort" : 0,
+               "WssPort" : 0
+            },
+            {
+               "Disabled" : false,
+               "IPAddress" : "127.0.0.1",
+               "Name" : "lo",
+               "TcpPort" : 5060,
+               "TlsPort" : 5061,
+               "UdpPort" : 5060,
+               "WsPort" : 0,
+               "WssPort" : 0
+            }
+         ],
+         "SipToS" : "0x00",
+         "TelephoneEventPayloadType" : 100,
+         "Timers" : {
+            "AckAfter2xx" : 32000,
+            "TimerH" : 32000
+         },
+         "UriTransportParam" : true,
+         "UsePRACK" : false,
+         "VoIPDeviceSerial" : 99
+      }
+   },
+   "tls" : {
+      "TLS" : [
+         {
+            "Certificate" : "",
+            "Name" : "SAS",
+            "PrivateKey" : "",
+            "PrivateKeyPassword" : "",
+            "TrustStore" : "/etc/ssl/certs/ca-certificates.crt",
+            "TrustStoreDefaultEnable" : false,
+            "TrustStoreVerifyPeer" : false,
+            "UID" : 0
+         }
+      ]
+   }
+}
