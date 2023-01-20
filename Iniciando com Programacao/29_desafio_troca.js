@@ -6,5 +6,5 @@ let c;
 c = b;
 b = a;
 a = c;
-
+//[a, b] = [b, a]
 console.log(a, b);
