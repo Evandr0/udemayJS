@@ -10,3 +10,5 @@ b*= 2; //b = b * 2
 b /= 2; // b = b / 2
 
 b %= 2; // b = b % 2   ==  resto da divisao de 2 .  (0 = PAr, 1 = impar)
+
+console.log("teste")
